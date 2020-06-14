@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///D:/web/Sublime%20Text%203/jingdong.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+		<!-- 网站优化的三大标签：SEO（Search Engine Optimization）搜索引擎优化 -->
+		<!-- 网页title标题：网站名-网站介绍（28个中文） -->
+		<title>MT.COM</title>
+		<!-- Description网站说明 ：作为网页搜索的摘要(120字以内)-->
+		<meta name="description" content="萌兔MT.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。">
+		<!-- Keywords关键字：是页面关键字，搜索引擎关注点之一（6~8个字） -->
+		<meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,萌兔">
+		<!-- 添加ico图片 -->
+		<link rel="shortcut icon" type="imagess/x-icon" href="file:///D:/web/Sublime%20Text%203/favicon.ico">
+		<!-- 引入css初始化文件 -->
+		<link rel="stylesheet" type="text/css" href="file:///D:/web/Sublime%20Text%203/css/normalize.css"> 
+		<!-- 头部和底部基本相同，我们做公共的样式 -->
+		<link rel="stylesheet" type="text/css" href="file:///D:/web/Sublime%20Text%203/css/base.css">
+
+	<style type="text/css">
+		.w { 
+	width: 1190px;/* 京东的版心 */
+	margin: 0 auto;
+}
+body {
+	background-color: #f0f3ef;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.f10 {
+	color: #f10215!important;
+}
+input, button {
+	border: 0px;
+	outline: none; /* 清除输入框的蓝边 */
+}
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,
+	textarea,th,ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #999999;
+	display: inline-block;
+}
+span {
+		color: #ccc;
+		margin: 0 5px;
+}
+@font-face {  /* 声明字体 */
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ycbsl3');
+  src:  url('../fonts/icomoon.eot?ycbsl3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ycbsl3') format('truetype'),
+    url('../fonts/icomoon.woff?ycbsl3') format('woff'),
+    url('../fonts/icomoon.svg?ycbsl3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* header--开始 */
+	header {
+		height: 80px;
+		background-color: #5a0b11;
+	}
+/* header--结束 */
+/* 快速导航栏--开始 */
+	.shortcut {
+		height: 30px;
+		background-color: #e3e4e5;
+		border-bottom: 1px solid #cccccc;
+		font-size: 12px;
+		color: #999999;
+	}
+	.city {
+		line-height: 30px;
+		margin-left: 205px;
+	}
+	.shortcut a {	
+		line-height: 30px;	
+	}
+	.shortcut a:hover {
+		color: #e33333;
+	}
+	.shortcut ul li {
+		float: left;
+		position: relative;
+	}
+	.shortcut i {
+		font-family: "icomoon";	
+	  	font-style: normal;
+	}
+	.space {
+		width: 1px;
+		height: 10px;
+		background-color: #cccccc;
+		margin: 11px 12px 0;
+	}
+	a .qrcode {
+		position: absolute;
+		right: -12px;
+		margin: 0 1px 0px 0px;
+		width: 66px;
+		height: 66px;
+		border: 2px solid #cfcfcf;
+		background: #f6f6f6 url(../images/mobile_qrcode.png) 50% no-repeat;
+	}
+/* 快速导航栏--结束 */
+/* 导航栏--开始 */
+	.middle {
+		height: 140px;
+		position: relative;
+	}
+	.logo h1 a {
+		display: block;
+		width: 190px;
+		height: 170px;
+		background: url(../images/sprite.head.png) no-repeat;
+		position: absolute;
+		left: 0;
+		top: -31px;
+		box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2), -1px 0px 1px rgba(0, 0, 0, 0.2);
+	}
+	.form {
+		width: 550px;
+		height: 35px;
+		position: absolute;
+		left: 320px;
+		top: 25px;
+		display: flex;
+		position: relative;
+	}
+	.form input {
+		width: 91%;
+		padding-left: 6px;
+		font-size: 14px;
+		color: #333;
+	}
+	.form button {
+		width: 9%;
+		background-color: #f10215; 
+	}
+	.form .camera i {
+		font-family: "icomoon";
+		font-style: normal;
+		font-size: 20px;
+		color: #999;
+		position: absolute;
+		right: 65px;
+		top: 5px;
+	}
+	.form button i {
+		font-family: "icomoon";
+		font-style: normal;
+		color: #fff;
+		font-size: 20px;
+	}
+	.form button, .form .camera i {
+		cursor: pointer;
+	}
+	.shopCar a {
+		width: 188px;
+		height: 33px;
+		line-height: 33px;
+		text-align: center;
+		background-color: pink;
+		position: absolute;
+		right: 100px;
+		top: 25px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+		font-size: 12px;
+		color: #f10214;
+	}
+	.shopCar i {
+		font-family: "icomoon";
+		font-style: normal;
+		font-size: 14px;
+		margin-right: 6px;
+	}
+	.shopCar span {
+		height: 14px;
+		width: 14px;
+		font-size: 12px;
+		text-align: center;
+		line-height: 15px;
+		background-color: #f10214;
+		color: #fff;
+		border-radius: 50%;
+		position: absolute;
+		right: 36px;
+		top: 6px;
+	}
+	.hotwords {
+		position: absolute;
+		left: 320px;
+		top: 65px;
+	}
+	.hotwords a {
+		margin: 0 3px;
+		font-size: 12px;
+	}
+	.navitems {
+		position: absolute;
+		bottom: 0;
+		left: 225px;
+		padding-bottom: 10px;
+	}
+	.navitems li {
+		float: left;
+		margin-right: 23px;
+	}
+	.navitems li a {
+		font-size: 14px;
+		color: #333;
+	}
+	.navitems li a:hover {
+		color: #e33333;
+	}
+	.navitems .space1 {
+		width: 1px;
+		height: 10px;
+		background-color: #cccccc;
+		margin-top: 5px;
+	}
+	.advertisement a {
+		display: block;
+		width: 190px;
+		height: 40px;
+		background: url(../images/广告.gif) no-repeat;
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+	}
+/* 导航栏结束 */
+/* 页面底部--start */
+	footer {
+		
+		margin-top: 35px;
+		background-color: #F0F3EF;
+	}
+	.service {
+		padding: 30px 0;
+		border-bottom: 1px solid #dedede;	
+	}
+	.service ul {
+		display: flex;
+		flex-direction: row;
+	}
+	.service ul li {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 700;
+		color: #444;
+		flex: 1;
+		position: relative;
+	}
+	.service ul li:nth-child(1) h5,
+	.service ul li:nth-child(2) h5,
+	.service ul li:nth-child(3) h5,
+	.service ul li:nth-child(4) h5 {
+		width: 36px;
+		height: 43px;
+		position: absolute;
+		bottom: -12px;
+		left: 22px;		
+	}
+	.service ul li:nth-child(1) h5 {
+		background: url(../images/sprite.footer.png) no-repeat left bottom;
+	}
+	.service ul li:nth-child(2) h5 {
+		background: url(../images/sprite.footer.png) no-repeat -41px bottom;
+	}
+	.service ul li:nth-child(3) h5 {
+		background: url(../images/sprite.footer.png) no-repeat -82px bottom;
+	}
+	.service ul li:nth-child(4) h5 {
+		background: url(../images/sprite.footer.png) no-repeat -123px bottom;
+	}
+	.help {
+		height: 200px;
+		border-bottom: 1px solid #dedede;
+	}
+	.help ul li {
+		float: left;
+		padding-right: 140px;
+	}
+	.help ul li:last-child {
+		padding-right: 0;
+	}
+	.help  dl dt {
+		margin-top: 20px;
+		margin-bottom: 5px;
+		color: #666;
+	}
+	.help dl dd a {
+		margin-top: 10px;
+		font-size: 12px;
+		color: #666;
+	}
+	.help dl dd a:hover {
+		color: #c81623;
+	}
+	.content {
+		width: 200px;
+		height: 150px;
+		margin-top: 20px;
+		color: #666;
+		background: url(../images/sprite.footer.png) no-repeat;
+		font-size: 12px;
+	}
+	.content h5 {
+		text-align: center;	
+		font-size: 14px;
+	}
+	.content p:first-child {
+		line-height: 18px;
+		margin: 20px 10px 0;		
+	}
+	.content p a {
+		float: right;
+		color: #666;
+		margin-right: 10px;
+	}
+	.content p a i {
+		font-family: "icomoon";
+		font-style: normal;
+		font-size: 16px;
+		color: #666;
+	}
+	.copyright {
+		padding-top: 20px;
+		text-align: center;
+	}
+	.copyright p a{
+		color: #666;
+		font-size: 12px;
+	}
+	.safe {
+		margin-top: 10px;
+	}
+	.safe p a {
+		color: #999;
+		padding-top: 10px;
+	}
+	.content p a:hover,
+	.copyright p a:hover,
+	.safe p a:hover {
+		color: #c81623;
+	}
+	.icomoon p a {
+		display: inline-block;
+		margin-top: 35px;
+		width: 105px;
+		height: 30px;
+		text-align: center;	
+	}
+	.icomoon p a:nth-child(1) {
+		background: url(../images/sprite.footer.png) no-repeat right top;
+	}
+	.icomoon p a:nth-child(2) {
+		background: url(../images/sprite.footer.png) no-repeat right -38px;
+	}
+	.icomoon p a:nth-child(3) {
+		background: url(../images/sprite.footer.png) no-repeat right -76px;
+	}
+	.icomoon p a:nth-child(4) {
+		background: url(../images/sprite.footer.png) no-repeat right -114px;
+	}
+	.icomoon p a:nth-child(5) {
+		background: url(../images/sprite.footer.png) no-repeat right -152px;
+	}
+
+	</style>
+</head>
+<body>
+	<!-- header--start -->
+		<header>
+			<div class="w">
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">
+					<img src="./MT.COM_files/banner.jpg" alt="banner">
+					<img src="./MT.COM_files/logo.png" alt="logo">
+				</a>
+			</div>
+		</header>
+	<!-- header--end -->
+	<!-- 快速导航栏--start -->
+		<div class="shortcut">
+			<div class="w">
+				<ul class="fl city">
+					<li><i class="f10">  </i>北京</li>
+				</ul>
+				<ul class="fr ">
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">hi,请登录</a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"> </a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#" class="f10">免费注册</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">我的订单</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">我的萌兔</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔会员</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">企业采购</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">客户服务</a>	
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">网站导航</a>
+					</li>
+					<li class="space"></li>
+					<li>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">手机萌兔<div class="qrcode"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!-- 快速导航栏--end -->
+	<!-- 导航栏--start -->
+		<div class="w middle">
+			<div class="logo">
+				<h1>	<!-- 提高权重，便于搜索引擎优化 -->
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">
+						<img src="./MT.COM_files/guanggao1.png" alt="广告">
+					</a>
+				</h1>
+			</div>
+			<!-- 搜索框 -->
+			<div class="form">
+				<input type="text" name="search" placeholder="手机">
+				<div class="camera"><i></i></div>
+				<button type="button"> <i>搜索</i></button>
+			</div>
+			<!-- 我的购物车 -->
+			<div class="shopCar">
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"><i class="f10"></i>我的购物车<span>0</span></a>
+			</div>
+			<!-- 关键词 -->
+			<div class="hotwords">
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#" class="f10">阿胶滋补节</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">玩所未玩</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">七夕礼物</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">每100减30</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">养殖取暖</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">618狂欢</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">HUAWEI</a>
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">满千减百</a>
+			</div>
+			<!-- 小导航栏 -->
+			<div class="navitems">
+				<ul>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">秒杀</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">优惠券</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">PLUS会员</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">闪购</a></li>
+					<li class="space1"></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">拍卖</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔时尚</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔超市</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔生鲜</a></li>
+					<li class="space1"></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">海囤全球</a></li>
+					<li><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔金融</a></li>
+				</ul>
+			</div>
+			<!-- 小广告--start -->
+			<div class="advertisement">
+				<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">
+					<img src="./MT.COM_files/guanggao.png" alt="小广告">
+				</a>
+			</div>
+		</div>
+	<!-- 导航栏--end -->
+	<!-- 页面底部--start -->
+	<footer>
+		<div class="service">
+			<!-- 服务模块 -->
+			<div class="w">
+				<ul>
+					<li>
+						<h5></h5>
+						<p>品类齐全，轻松购物</p>
+					</li>
+					<li>
+						<h5></h5>
+						<p>多仓直发，急速配送</p>
+					</li>
+					<li>
+						<h5></h5>
+						<p>正品行货，精致服务</p>
+					</li>
+					<li>
+						<h5></h5>
+						<p>天天低价，畅选无忧</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 帮助模块 -->
+		<div class="w help">
+			<div class="fl">
+				<ul>
+					<li>
+						<dl>
+							<dt><h5>购物指南</h5></dt>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">购物流程</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">会员介绍</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">生活旅行</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">常见问题</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">大家电</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">联系客服</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><h5>配送方式</h5></dt>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">上门自提</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">211限时达</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">配送服务查询</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">配送费收取标准</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">海外配送</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><h5>支付方式</h5></dt>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">货到付款</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">在线支付</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">分期付款</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">邮局汇款</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">公司转账</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><h5>售后服务</h5></dt>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">售后政策</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">价格保护</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">退款说明</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">返修/退换货</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">取消订单</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><h5>特色服务</h5></dt>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">夺宝岛</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">DIY装机</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">延保服务</a>
+								</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔E卡</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔通信</a>
+							</dd>
+							<dd>
+								<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔MT+</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="fr">
+				<div class="content">
+					<h5>萌兔自营覆盖区县</h5>
+					<div class="contentP">
+						<p>萌兔已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+						<p><a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">查看详情<i>...</i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 版权板块 -->
+			<div class="w copyright">
+				<p>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">关于我们</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">联系我们</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">联系客服</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">合作招商</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">商家帮助</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">营销中心</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">手机萌兔</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">友情链接</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">销售联盟</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔社区</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">风险监测</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">隐私政策</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔公益</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">English Site</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Media &amp; IR</a>
+				</p>
+				<div class="safe">
+					<p>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">京公网安备 66000999000088号</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">京ICP证8888888号</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">互联网药品信息服务资格证编号(京)-经营性-2010-0008</a>
+					<span>|</span>
+					<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">新出发京零 字第大160008号</a>
+					<span>|</span>
+					</p>
+					<p>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">互联网出版许可证编号新出网证(京)字888号</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">出版物经营许可证</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">网络文化经营许可证京网文[2010]2188-698号</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">违法和不良信息举报电话：4006561155</a>
+						<span>|</span>
+					</p>
+					<p>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Copyright  2004 - 2018  萌兔MT.com 版权所有</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">消费者维权热线：4006067733经营证照</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">(京)网械平台备字(2018)第00001号</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">营业执照</a>
+						<span>|</span>
+					</p>
+					<p>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Global Site</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Сайт России</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Situs Indonesia</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">Sitio de España</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">เว็บไซต์ประเทศไทย</a>
+						<span>|</span>
+					</p>
+					<p>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔旗下网站：萌兔钱包</a>
+						<span>|</span>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#">萌兔云</a>
+						<span>|</span>
+					</p>
+				</div>
+				<div class="icomoon">
+					<p>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"></a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"></a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"></a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"></a>
+						<a href="file:///D:/web/Sublime%20Text%203/jingdong.html#"></a>
+					</p>
+				</div>
+			</div>
+	</footer>
+	<!-- 页面底部--end -->
+
+</body></html>
